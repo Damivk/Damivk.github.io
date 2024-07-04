@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.time (); //Inicio de contador de tiempo     
+    alert ("Hola")
+    let nombre = prompt ("¿como te llamas?, tu? ");
+    console.info (nombre,10,true)
+    console.time ("Tiempo entre prompt y doc write") // Este ha sido creado para controlar el tiempo entre el primer prompt y otro.
+    console.warn(nombre, 10, true);
+    console.error (nombre, 10, true)
+    document.write("Te llamas ", nombre);
+    console.timeEnd ("Tiempo entre prompt y doc write")
+    let respuesta = confirm ("quieres dormir la siesta?");
+    console.timeEnd(); //Final del contador de tiempo
+</script> 

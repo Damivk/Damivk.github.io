@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script src="Javascript.js"></script>
+</head>
+<body>
+<div id="Nombre"></div>  
+<div id="Altura"></div>
+<div id="Peso"></div>
+<div id="IMC" ></div>
+</body>
+<script>
+    let Nombre = prompt ("Escribe tu Nombre ");
+    document.getElementById ("Nombre"). innerHTML = Nombre; // aquí lo que hacemos es: En naranja lo que "invocamos"
+    let Altura = prompt ("¿Cuanto mides? ");
+    document.getElementById ("Altura"). innerHTML = Altura; // En azul lo estamos nombrando.
+    let Peso = prompt ("Cuanto pesas? ");    
+    document.getElementById ("Peso"). innerHTML = Peso;
+
+    let IMC = calcularIMC (Peso,Altura); // Mencionamos la función 
+    document.getElementById ("IMC"). innerHTML = IMC; // Recogemos el cálculo de IMC.
+</script>
+</html>
+$
